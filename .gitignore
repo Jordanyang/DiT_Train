@@ -20,3 +20,4 @@ dit_runs/lightweight_v4_50k_scratch_qknorm/**
 !dit_runs/lightweight_v4_50k_scratch_qknorm/history.json
 !dit_runs/lightweight_v4_50k_scratch_qknorm/samples/
 !dit_runs/lightweight_v4_50k_scratch_qknorm/samples/**
+!dit_runs/lightweight_v4_50k_scratch_qknorm/checkpoint-400000.pt
