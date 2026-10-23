@@ -1,0 +1,22 @@
+# 数据与缓存（不上传）
+images_32x32/
+images_32x32_5000/
+images_32x32_50000/
+datasets_cache/
+sample_eval/
+__pycache__/
+*.pyc
+
+# 模型权重（超过 GitHub 100MB 限制，本地保留）
+*.pt
+*.pth
+*.ckpt
+
+# 训练输出：只保留最终 run 的 config / history / samples
+dit_runs/**
+!dit_runs/lightweight_v4_50k_scratch_qknorm/
+dit_runs/lightweight_v4_50k_scratch_qknorm/**
+!dit_runs/lightweight_v4_50k_scratch_qknorm/config.json
+!dit_runs/lightweight_v4_50k_scratch_qknorm/history.json
+!dit_runs/lightweight_v4_50k_scratch_qknorm/samples/
+!dit_runs/lightweight_v4_50k_scratch_qknorm/samples/**

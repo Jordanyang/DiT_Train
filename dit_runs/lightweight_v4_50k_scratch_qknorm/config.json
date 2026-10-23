@@ -1,0 +1,41 @@
+{
+  "model": {
+    "image_size": 32,
+    "patch_size": 2,
+    "in_channels": 3,
+    "hidden_size": 384,
+    "depth": 8,
+    "num_heads": 8,
+    "mlp_ratio": 4,
+    "time_dim": 256,
+    "qk_norm": true
+  },
+  "training": {
+    "data_dir": "images_32x32_50000",
+    "output_dir": "dit_runs/lightweight_v4_50k_scratch_qknorm",
+    "train_steps": 400000,
+    "batch_size": 128,
+    "num_timesteps": 400,
+    "prediction": "v",
+    "sample_steps": 100,
+    "num_samples": 64,
+    "learning_rate": 0.0003,
+    "warmup_steps": 1000,
+    "ema_decay": 0.9999,
+    "hidden_size": 384,
+    "depth": 8,
+    "num_heads": 8,
+    "patch_size": 2,
+    "qk_norm": true,
+    "checkpoint_interval": 20000,
+    "latest_checkpoint_interval": 5000,
+    "preview_interval": 20000,
+    "seed": 2028,
+    "device": "cuda:0",
+    "resume": false,
+    "sample_only": false,
+    "checkpoint": null,
+    "loss_spike_factor": 6.0,
+    "guard_interval": 10
+  }
+}
