@@ -26,6 +26,7 @@ softmax 熵坍缩 → 输出塌缩为零预测，采样变纯噪声。加 RMSNor
 
 | 文件 | 说明 |
 |---|---|
+| `prepare_data.py` / `DATA_PREPARATION.md` | 数据获取与重建（CIFAR-10 50000 张 PNG，数据本身不上传） |
 | `lightweight_dit.py` | 训练/采样脚本：DDP、QK-norm、稳定防护、EMA、DDIM |
 | `analyze_samples.py` / `eval_grid.py` | 样本统计指标评估 |
 | `attention_forensics*.py` | attention logit / 熵坍缩取证 |
